@@ -1,2 +1,5 @@
 - link:
     ~/.bash_aliases: bash_aliases
+    ~/.bashrc: bashrc
+    ~/.bin: bin
+    ~/.gitignore: gitignore
