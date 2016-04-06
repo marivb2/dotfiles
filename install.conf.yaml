@@ -7,3 +7,4 @@
     ~/.bashrc: bashrc
     ~/.bin: bin
     ~/.gitignore: gitignore
+    ~/.gitconfig_shared: gitconfig_shared
