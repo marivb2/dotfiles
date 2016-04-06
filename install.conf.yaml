@@ -1,3 +1,7 @@
+- defaults:
+    link:
+      relink: true
+
 - link:
     ~/.bash_aliases: bash_aliases
     ~/.bashrc: bashrc
