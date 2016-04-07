@@ -4,7 +4,7 @@
 
 - link:
     ~/.bash_aliases: bash_aliases
-    ~/.bashrc: bashrc
+    ~/.bashrc_shared: bashrc_shared
     ~/.bin: bin
     ~/.gitignore: gitignore
     ~/.gitconfig_shared: gitconfig_shared
