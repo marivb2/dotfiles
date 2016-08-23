@@ -1,6 +1,9 @@
 [user]
   editor = vim
 
+[core]
+	editor = vim
+
 [color]
   ui = auto
   diff = auto

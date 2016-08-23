@@ -12,3 +12,4 @@ set shiftwidth=2
 set noswapfile
 
 au BufRead,BufNewFile Dockerfile* set filetype=dockerfile
+au BufRead,BufNewFile .gitconfig* set filetype=gitconfig
