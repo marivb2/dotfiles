@@ -9,4 +9,6 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
+set noswapfile
+
 au BufRead,BufNewFile Dockerfile* set filetype=dockerfile
