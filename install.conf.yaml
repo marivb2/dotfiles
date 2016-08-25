@@ -3,10 +3,10 @@
       relink: true
 
 - link:
-    ~/.bash_aliases: bash_aliases
-    ~/.bashrc_shared: bashrc_shared
+    ~/.bash_aliases: link_files/bash_aliases
+    ~/.bashrc_shared: link_files/bashrc_shared
+    ~/.gitignore: link_files/gitignore
+    ~/.gitconfig_shared: link_files/gitconfig_shared
+    ~/.vimrc: link_files/vimrc
     ~/.bin: bin
-    ~/.gitignore: gitignore
-    ~/.gitconfig_shared: gitconfig_shared
     ~/.vim: vim
-    ~/.vimrc: vimrc
