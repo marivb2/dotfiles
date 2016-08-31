@@ -23,3 +23,10 @@ filetype plugin indent on
 " File type associations
 au BufRead,BufNewFile Dockerfile* set filetype=dockerfile
 au BufRead,BufNewFile .gitconfig* set filetype=gitconfig
+
+" File name tab completion functions like bash, it gives you a list of
+" options instead of automatically filling in the first possible match.
+set wildmenu
+" It will however, with this option, complete up to the first character of
+" ambiguity.
+set wildmode=list:longest
