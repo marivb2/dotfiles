@@ -30,3 +30,26 @@ set wildmenu
 " It will however, with this option, complete up to the first character of
 " ambiguity.
 set wildmode=list:longest
+
+" CtrlP
+
+let g:ctrlp_max_height = 20
+let g:ctrlp_match_window_reversed = 0
+let g:ctrlp_match_window_bottom = 1
+let g:ctrlp_switch_buffer = 2
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_mruf_include = '\.py$\|\.rb$|\.coffee|\.haml'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
+let g:ctrlp_follow_symlinks = 1
+let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript']
+
+" Leader shortcuts
+
+" for CtrlP
+map <leader>ff :CtrlP<CR>
+map <leader>fb :CtrlPBuffer<CR>
+map <leader>ft :CtrlPTag<CR>
+map <leader>fq :CtrlPQuickFix<CR>
+map <leader>fd :CtrlPDir<CR>
+map <leader>fr :CtrlPRTS<CR>
+map <leader>fm :CtrlPMRU<CR>
