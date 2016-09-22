@@ -43,8 +43,6 @@ let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript']
 
-" Leader shortcuts
-
 " for CtrlP
 map <leader>ff :CtrlP<CR>
 map <leader>fb :CtrlPBuffer<CR>
@@ -53,3 +51,15 @@ map <leader>fq :CtrlPQuickFix<CR>
 map <leader>fd :CtrlPDir<CR>
 map <leader>fr :CtrlPRTS<CR>
 map <leader>fm :CtrlPMRU<CR>
+
+" Tab navigation like web browers
+nmap <C-S-Left> :tabprevious<CR>
+map  <C-S-Left> :tabprevious<CR>
+imap <C-S-Left> <ESC>:tabprevious<CR>i
+nmap <C-S-Right>   :tabnext<CR>
+map  <C-S-Right>   :tabnext<CR>
+imap <C-S-Right>   <ESC>:tabnext<CR>i
+nmap <C-t>          :tabnew<CR>
+imap <C-t>     <ESC>:tabnew<CR>
+nmap <C-c>          :tabclose<CR>
+imap <C-c> <ESC>:tabclose<CR>
