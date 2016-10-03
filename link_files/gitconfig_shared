@@ -38,3 +38,6 @@
 
 [credential]
   helper = cache --timeout=1800
+
+[rerere]
+  enabled = true
