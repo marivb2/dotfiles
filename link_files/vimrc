@@ -5,12 +5,15 @@ Plug 'junegunn/vim-easy-align'
 Plug 'slim-template/vim-slim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'elzr/vim-json'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
+" File and buffer configs
 set noswapfile
-
-" Show line numbers
+set hidden
 set number
 
 " Open new panes on bottom and right
@@ -30,12 +33,25 @@ filetype plugin indent on
 au BufRead,BufNewFile Dockerfile* set filetype=dockerfile
 au BufRead,BufNewFile .gitconfig* set filetype=gitconfig
 
+" Remove trailing whitespaces before write, except for binary files
+func! StripTrailingWhitespace()
+  normal mZ
+  %s/\s\+$//e
+  normal `Z
+endfunc
+autocmd BufWrite * if ! &bin | call StripTrailingWhitespace() | endif
+
 " File name tab completion functions like bash, it gives you a list of
 " options instead of automatically filling in the first possible match.
 set wildmenu
 " It will however, with this option, complete up to the first character of
 " ambiguity.
 set wildmode=list:longest
+
+" No hiding double quotes in JSON
+let g:vim_json_syntax_conceal = 0
+" Fold JSONs by syntax
+au BufRead,BufNewFile *.json set foldmethod=syntax
 
 " CtrlP
 
