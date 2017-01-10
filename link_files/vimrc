@@ -53,6 +53,10 @@ let g:vim_json_syntax_conceal = 0
 " Fold JSONs by syntax
 au BufRead,BufNewFile *.json set foldmethod=syntax
 
+" Airline prefs
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
+
 " CtrlP
 
 let g:ctrlp_max_height = 20
