@@ -8,6 +8,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe'
 Plug 'elzr/vim-json'
 Plug 'vim-airline/vim-airline'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
@@ -15,6 +17,9 @@ call plug#end()
 set noswapfile
 set hidden
 set number
+
+" set cursorline
+" hi CursorLine term=none cterm=none ctermbg=DarkGrey
 
 " Open new panes on bottom and right
 set splitbelow
