@@ -76,6 +76,15 @@ let g:ctrlp_mruf_include = '\.py$\|\.rb$|\.coffee|\.haml'
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 let g:ctrlp_follow_symlinks = 1
 let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript']
+" For some specific repository types, I want to open only files under version
+" control
+let g:ctrlp_user_command = {
+      \ 'types': {
+      \ 1: ['.git/', 'cd %s && git ls-files -co -X .gitignore'],
+      \ 2: ['.hg/', 'hg --cwd %s locate -I .'],
+      \ },
+      \ 'fallback': 'find %s -type f'
+      \ }
 
 " for CtrlP
 map <leader>ff :CtrlP<CR>
