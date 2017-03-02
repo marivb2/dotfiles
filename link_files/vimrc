@@ -18,8 +18,10 @@ let g:vim_markdown_folding_disabled = 1
 
 " File and buffer configs
 set noswapfile
-set hidden
+" show line numbers
 set number
+" hide buffers instead of closing them when you :q, keeping their undo history
+set hidden
 
 " set cursorline
 " hi CursorLine term=none cterm=none ctermbg=DarkGrey
@@ -36,6 +38,32 @@ set shiftwidth=2
 " Enable syntax and file type detection
 syntax enable
 filetype plugin indent on
+
+" Enable syntax folding for blocks and comments.
+set foldmethod=syntax
+" Don't fold blocks less than 3 lines long.
+set foldminlines=3
+set foldlevel=100
+
+" indentation configuration
+set cindent
+set smartindent
+set autoindent
+
+" text search options
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" text search remappings
+nnoremap / :set hlsearch<CR>/
+nnoremap <CR> :noh<CR><CR>
+
+" enable mouse in console
+set mousemodel=extend
+set mouse=a
+set mousehide
 
 " File type associations
 au BufRead,BufNewFile Dockerfile* set filetype=dockerfile
