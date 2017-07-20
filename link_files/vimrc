@@ -12,6 +12,7 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'suan/vim-instant-markdown'
 Plug 'mattn/emmet-vim'
+Plug 'heavenshell/vim-jsdoc'
 
 call plug#end()
 
@@ -135,3 +136,7 @@ nmap <C-t>          :tabnew<CR>
 imap <C-t>     <ESC>:tabnew<CR>
 nmap <C-c>          :tabclose<CR>
 imap <C-c> <ESC>:tabclose<CR>
+
+" Options for vim-jsdoc
+let g:jsdoc_allow_input_prompt=1
+let g:jsdoc_enable_es6=1
