@@ -15,6 +15,10 @@ Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'altercation/vim-colors-solarized'
+Plug 'itchyny/vim-haskell-indent'
+Plug 'vim-scripts/haskell.vim'
+Plug 'sickill/vim-monokai'
+Plug 'tomasr/molokai'
 
 call plug#end()
 
@@ -26,13 +30,9 @@ colorscheme solarized
 
 " File and buffer configs
 set noswapfile
-" show line numbers
-set number
+set number " show line numbers
 " hide buffers instead of closing them when you :q, keeping their undo history
 set hidden
-
-" set cursorline
-" hi CursorLine term=none cterm=none ctermbg=DarkGrey
 
 " Open new panes on bottom and right
 set splitbelow
