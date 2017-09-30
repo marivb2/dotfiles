@@ -25,5 +25,5 @@ To use solarized with dir colors:
 
 ```
 git clone git@github.com:seebi/dircolors-solarized.git
-ln -s dircolors-solarized/dircolors.ansi-dark ~/.dircolors
+ln -s $(pwd)/dircolors-solarized/dircolors.ansi-dark ~/.dircolors
 ```
