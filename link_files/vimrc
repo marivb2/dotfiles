@@ -28,6 +28,9 @@ let g:vim_markdown_folding_disabled = 1
 
 colorscheme solarized
 
+let g:instant_markdown_autostart = 0
+let g:instant_markdown_open_to_the_world = 1
+
 " File and buffer configs
 set noswapfile
 set number " show line numbers

@@ -11,3 +11,8 @@ alias op=gnome-open
 function s { find . -name "*$1*" 2>/dev/null; }
 # searches for given filename exactly in current and all subdirectories
 function ss { find . -name "$1" 2>/dev/null; }
+
+# git
+alias gst='git status'
+alias ga='git add'
+alias gc='git commit'
