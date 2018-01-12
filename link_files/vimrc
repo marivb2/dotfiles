@@ -27,7 +27,6 @@ let g:javascript_plugin_flow = 1
 let g:vim_markdown_folding_disabled = 1
 let g:ycm_auto_trigger = 0
 
-set background=dark
 colorscheme solarized
 set cursorline
 
