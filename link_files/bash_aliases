@@ -15,5 +15,5 @@ function ss { find . -name "$1" 2>/dev/null; }
 # git
 alias gst='git status'
 alias ga='git add'
-alias gc='git commit'
+alias gc='git commit -v'
 alias gco='git checkout'
