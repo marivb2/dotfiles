@@ -13,6 +13,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'suan/vim-instant-markdown'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'heavenshell/vim-jsdoc'
 Plug 'altercation/vim-colors-solarized'
 Plug 'itchyny/vim-haskell-indent'
@@ -25,7 +26,6 @@ call plug#end()
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
 let g:vim_markdown_folding_disabled = 1
-let g:ycm_auto_trigger = 0
 
 colorscheme solarized
 set cursorline

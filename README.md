@@ -9,6 +9,7 @@ My personal dotfiles. I'm using [dotbot](https://github.com/anishathalye/dotbot)
 ./install
 echo "source ~/.bashrc_shared" >> ~/.bashrc
 git config --global include.path "~/.gitconfig_shared"
+npm -g install instant-markdown-d
 ```
 
 # Other stuff
