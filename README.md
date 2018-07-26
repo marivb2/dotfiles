@@ -17,7 +17,7 @@ npm -g install instant-markdown-d
 To use solarized in Gnome Terminal:
 
 ```
-git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+git clone git@github.com:marivb/gnome-terminal-colors-solarized.git
 cd gnome-terminal-colors-solarized
 ./install.sh
 ```

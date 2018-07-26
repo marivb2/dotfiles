@@ -27,6 +27,7 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_flow = 1
 let g:vim_markdown_folding_disabled = 1
 
+let g:solarized_termtrans = 1
 colorscheme solarized
 set cursorline
 
