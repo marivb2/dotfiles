@@ -64,6 +64,9 @@ set cindent
 set smartindent
 set autoindent
 
+" use 4 spaces for lua indentation
+autocmd FileType lua setlocal shiftwidth=4 softtabstop=4 expandtab
+
 " text search options
 set hlsearch
 set incsearch
