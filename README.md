@@ -28,3 +28,7 @@ To use solarized with dir colors:
 git clone git@github.com:seebi/dircolors-solarized.git
 ln -s $(pwd)/dircolors-solarized/dircolors.ansi-dark ~/.dircolors
 ```
+
+Emojis!
+
+https://github.com/gentakojima/emojione-picker-ubuntu

@@ -20,6 +20,7 @@ Plug 'itchyny/vim-haskell-indent'
 Plug 'vim-scripts/haskell.vim'
 Plug 'sickill/vim-monokai'
 Plug 'tomasr/molokai'
+Plug 'vim-scripts/EasyMotion'
 
 call plug#end()
 
