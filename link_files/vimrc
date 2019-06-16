@@ -126,20 +126,24 @@ let g:ctrlp_extensions = ['tag', 'buffertag', 'quickfix', 'dir', 'rtscript']
 " control
 let g:ctrlp_user_command = {
       \ 'types': {
-      \ 1: ['.git/', 'cd %s && git ls-files -co -X .gitignore'],
-      \ 2: ['.hg/', 'hg --cwd %s locate -I .'],
+      \ 1: ['.gitignore', 'cd %s && git ls-files -co -X .gitignore'],
+      \ 2: ['.git/', 'cd %s && git ls-files -co'],
+      \ 3: ['.hg/', 'hg --cwd %s locate -I .'],
       \ },
       \ 'fallback': 'find %s -type f'
       \ }
 
 " for CtrlP
-map <leader>ff :CtrlP<CR>
-map <leader>fb :CtrlPBuffer<CR>
-map <leader>ft :CtrlPTag<CR>
-map <leader>fq :CtrlPQuickFix<CR>
-map <leader>fd :CtrlPDir<CR>
-map <leader>fr :CtrlPRTS<CR>
-map <leader>fm :CtrlPMRU<CR>
+map <leader>pp :CtrlP<CR>
+map <leader>pb :CtrlPBuffer<CR>
+map <leader>pt :CtrlPTag<CR>
+map <leader>pq :CtrlPQuickFix<CR>
+map <leader>pd :CtrlPDir<CR>
+map <leader>pr :CtrlPRTS<CR>
+map <leader>pm :CtrlPMRU<CR>
+
+" for EasyMotion
+let g:EasyMotion_leader_key = '<Leader>'
 
 " Tab navigation like web browers
 nmap <C-S-Left> :tabprevious<CR>
