@@ -14,6 +14,7 @@ function ansi_reset () { c 0; }
 # Foreground Shortcuts
 # normal (reset)
 function fgc () { c "0;$1"; }
+function fgb () { c "1;$1"; }
 
 # Other prompt helpers
 

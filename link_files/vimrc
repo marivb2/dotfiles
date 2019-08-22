@@ -21,6 +21,8 @@ Plug 'vim-scripts/haskell.vim'
 Plug 'sickill/vim-monokai'
 Plug 'tomasr/molokai'
 Plug 'vim-scripts/EasyMotion'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-scripts/icalendar.vim'
 
 call plug#end()
 
@@ -86,6 +88,8 @@ set mousehide
 " File type associations
 au BufRead,BufNewFile Dockerfile* set filetype=dockerfile
 au BufRead,BufNewFile .gitconfig* set filetype=gitconfig
+au BufRead,BufNewFile *.ics set filetype=icalendar
+au BufRead,BufNewFile *bashrc* set filetype=sh
 
 " Remove trailing whitespaces before write, except for binary files
 func! StripTrailingWhitespace()
@@ -110,6 +114,10 @@ au BufRead,BufNewFile *.json set foldmethod=syntax
 " Airline prefs
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+
+" Easy Motion prefs
+
+let g:EasyMotion_leader_key = '<Leader><Leader>'
 
 " CtrlP
 
@@ -156,6 +164,9 @@ nmap <C-t>          :tabnew<CR>
 imap <C-t>     <ESC>:tabnew<CR>
 nmap <C-c>          :tabclose<CR>
 imap <C-c> <ESC>:tabclose<CR>
+
+" NerdTree
+map <C-n> :NERDTreeToggle<CR>
 
 " Options for vim-jsdoc
 let g:jsdoc_allow_input_prompt=1
