@@ -128,5 +128,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+source marks
+
 # Run fortune if present
 command -v fortune >/dev/null 2>&1 && fortune
