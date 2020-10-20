@@ -12,6 +12,18 @@ git config --global include.path "~/.gitconfig_shared"
 npm -g install instant-markdown-d
 ```
 
+## Zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+./update_submodules
+./install -c install_zsh.conf.yaml
+git config --global include.path "~/.gitconfig_shared"
+```
+
+
 # Other stuff
 
 To use solarized in Gnome Terminal:

@@ -4,6 +4,7 @@
 
 - link:
     ~/.zshrc: link_files/zshrc
+    ~/.p10k.zsh: link_files/p10k.zsh
     ~/.gitconfig_shared: link_files/gitconfig_shared
     ~/.vimrc: link_files/vimrc
     ~/.vim: vim
