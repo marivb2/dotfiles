@@ -1,0 +1,9 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    ~/.zshrc: link_files/zshrc
+    ~/.gitconfig_shared: link_files/gitconfig_shared
+    ~/.vimrc: link_files/vimrc
+    ~/.vim: vim
