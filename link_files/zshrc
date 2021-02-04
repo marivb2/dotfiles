@@ -78,6 +78,7 @@ CASE_SENSITIVE="true"
 plugins=(
   colored-man-pages
   command-not-found
+  docker
   gem
   git
   git-lfs
@@ -127,3 +128,9 @@ alias -g gc='git commit -v'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(rbenv init -)"
+
+export GOPATH="$HOME/go"
+export GOROOT="$(brew --prefix go@1.12)/libexec"
+export PATH="${GOPATH}/bin:${GOROOT}/bin:$PATH"
+unset LESS
+export PATH="/usr/local/opt/ruby/bin:$PATH"
