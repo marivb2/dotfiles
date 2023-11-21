@@ -12,6 +12,12 @@ git config --global include.path "~/.gitconfig_shared"
 npm -g install instant-markdown-d
 ```
 
+Open vim:
+
+```
+:PlugInstall
+```
+
 ## Zsh
 
 ```
