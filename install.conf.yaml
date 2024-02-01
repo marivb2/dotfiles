@@ -8,6 +8,5 @@
     ~/.gitignore: link_files/gitignore
     ~/.gitconfig_shared: link_files/gitconfig_shared
     ~/.vimrc: link_files/vimrc
-    ~/.tmux.conf: link_files/tmux.conf
     ~/.bin: bin
     ~/.vim: vim
