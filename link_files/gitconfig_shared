@@ -31,6 +31,9 @@
   changed = yellow bold
   untracked = white
 
+[log]
+  date = relative
+
 [alias]
   co = checkout
   st = status
@@ -38,8 +41,8 @@
   b  = branch
   sw = switch
   cp = cherry-pick
-  lg = !GIT_PAGER=less git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  lga = !GIT_PAGER=less git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = !GIT_PAGER=less git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lga = !GIT_PAGER=less git log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [credential]
   helper = cache --timeout=1800
